@@ -1,7 +1,8 @@
 function tribonacci(signature, n) {
     const gen = tribonacciGen(signature);
-    for (let i = 0; i < n - 3; i++)
+    for (let i = 0; i < n - 3; i++) {
         signature.push(gen.next().value);
+    }
     return signature;
 }
 
